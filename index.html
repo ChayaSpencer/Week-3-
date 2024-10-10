@@ -38,33 +38,48 @@
   
 <!-- Add your restaurant order form below -->
   <form role='order_form' id=order-form>
-   <h2>Order Form</h2>
-     <span>What is your name?</span>
+    <h2>Order Form</h2>
     <section class = "customer-name">
+      <span>What is your name?</span>
       <label for = "full-name"> Name</label>
       <input placeholder="Last,First" type="text">
       <br>
-    <span>What is your street address?</span>
-        <input placeholder="Street Name, Unit/Apt." type="text">
-        <input placeholder="City Name" type="text">
-        <input placeholder="State" type="text">
-        <input placeholder="Zipcode" class="zipcode" type="text" required pattern="\d{5,5}(-\d{4,4})?">
+    </section>
+    
+    <section class = "contact-info">
+      <span>What is your street address?</span>
       <br>
-   <section class = "contact-number">
-    <label for = "phone-number">Phone Number</label>
-    <input type = "number" id = "phone-number" name = "number">
-  <section class = "menu-items">
-    <span>What would you like to order?</span>
-    <input type = "checkbox" id = "cheese-slice" value = "cheese-slice" name = "menu-item">
-    <label for = "cheese-slice">Cheese Slice</label>
-    <input type = "number" id = "quantity-of-cheese" name = "quantity-of-cheese" min = "0" step = "1">
-    <input type = "checkbox" id = "pepperoni-slice" value = "pepperoni-slice" name = "menu-item">
-    <label for = "pepperoni-slice">Pepperoni Slice</label>
-    <input type = "number" id = "quantity-of-pepperoni" name = "quantity-of-pepperoni" min = "0" step = "1">
-    <input type = "checkbox" id = "veggie-slice" value = "veggie-slice" name = "menu-item">
-    <label for = "cheese-slice">Veggie Slice</label>
-    <input type = "number" id = "quantity-of-veggie" name = "quantity-of-veggie" min = "0" step = "1">
-    <input type='submit' value='order'>
+      <input placeholder="Street Name, Unit/Apt." type="text">
+      <br>
+      <input placeholder="City Name" type="text">
+      <br>
+      <input placeholder="State" type="text">
+      <br>
+      <input placeholder="Zipcode" class="zipcode" type="text" required pattern="\d{5,5}(-\d{4,4})?">
+      <br>
+      <label for = "phone-number">Phone Number</label>
+      <input type = "number" id = "phone-number" name = "number">
+      <br>
+      <label for = "email-address">Email Address</label>
+      <input name = "email-address" placeholder = "Email Address" type="text">
+    </section>
+    
+    <section class = "menu-items">
+      <span>What would you like to order?</span>
+      <input type = "checkbox" id = "cheese-slice" value = "cheese-slice" name = "menu-item">
+      <label for = "cheese-slice">Cheese Slice</label>
+      <input type = "number" id = "quantity-of-cheese" name = "quantity-of-cheese" min = "0" step = "1">
+      <input type = "checkbox" id = "pepperoni-slice" value = "pepperoni-slice" name = "menu-item">
+      <label for = "pepperoni-slice">Pepperoni Slice</label>
+      <input type = "number" id = "quantity-of-pepperoni" name = "quantity-of-pepperoni" min = "0" step = "1">
+      <input type = "checkbox" id = "veggie-slice" value = "veggie-slice" name = "menu-item">
+      <label for = "cheese-slice">Veggie Slice</label>
+      <input type = "number" id = "quantity-of-veggie" name = "quantity-of-veggie" min = "0" step = "1">
+    </section>
+
+    <section class = "submit-order">
+      <input type='submit' value='order' href='#' >
+    </section>
   </form>
 <!-- Add your restaurant order form above -->
 </main>
