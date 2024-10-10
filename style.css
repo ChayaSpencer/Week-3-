@@ -13,3 +13,14 @@ body {
 }
 
 /* Add your custom CSS below this line */
+#quantity-of-cheese {
+  width: 30px;
+}
+
+#quantity-of-pepperoni {
+   width: 30px;
+}
+
+#quantity-of-veggie {
+  width: 30px;
+}
