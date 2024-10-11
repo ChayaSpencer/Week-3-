@@ -8,7 +8,7 @@
 <body>
 
 <header role='banner'>
-  <h1>Document title, main headline</h1>
+  <h1>  Order  </h1>
   <nav>
     <ol role='navigation'>
       <li>
@@ -24,7 +24,7 @@
         <a href='#'>delta</a>
       </li>
     </ol>
-    <form role='search'>
+    <form role='search' aria-label= "Site Search">
       <input type='search' placeholder='Enter search term here...'>
       <input type='submit' value='search'>
     </form>
@@ -34,23 +34,36 @@
 <main role='main'>
   <h2>Main Content</h2>
   <p>
-    Text for this article. 
-    Keep in mind that the hierarchy of headlines 
-    (h1 descending to h6) matters a lot to screen readers.
+    <h1> Place Order Here</h1>
   </p>
   
-<!-- Add your restaurant order form below -->
+<!-- Order Form -->
   <form role='order_form'>
-    <input type='search' placeholder='Put Order Form Here'>
+    <h3>Order Form</h3>
+    <label for="order">Order:</label>
+    <input type='search' placeholder='Enter your order here'><br><br>
     <input type='submit' value='order'>
   </form>
-<!-- Add your restaurant order form above -->
+<!-- Payment Information -->
+  <h4> Payment Information</h4>
+  <!-- Card Number -->
+  <label for="Card Number">Card Number:</label>
+  <input id="Card Number" type="text" placeholder="Enter Your Card Number" maxlength="16" required><br><br>
 </main>
 
-<aside role='complementary'>
-  <h2>Sidebar</h2>
-  <p>Complementary content, additional information and such...</p>
-</aside>
+  <!-- Expiration Date-->
+<label for="exp-date">Expiration Date:</label> 
+  <input id="exp-date" type="month" required <br><br>
+  
+  <!--Security Code (CCV) -->
+  <label for="sec-code">Security Code (CVV):</label>
+  <input id="sec-code" type="text" placeholder="123" maxlength="3" required><br><br>
+
+  <!-- Submit Button -->
+  <input type="submit" value:"Submit Order">
+</form>
+</main>
+  
 
 <footer role='contentinfo'>
   <h2>Footer</h2>
