@@ -15,7 +15,14 @@ body {
     font-family: Arial, sans-serif; /* Use a basic, widely-supported font */
     line-height: 1.6; /* A basic line-height for readability */
     color: #333; /* A basic text color that's not too harsh */
-    background-color: light-blue; /* A basic background color */
+    background-color: #ADD8E6; /* A basic background color */
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
 }
 
 /* Add your custom CSS below this line */
