@@ -1,5 +1,129 @@
 <html>
 <head>
+
+  <html>
+<head>
+<title>Welcome to Pizza Palaze</title>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbARalz7ZTZ5jH3-ewid2ag1WrRqPopk1SLg&s"/>
+<meta charset='utf-8'>
+<meta name='description' content='Description of document content'>
+</head>
+
+<body>
+
+<header role='banner'>
+  <h1>Pizza Palace</h1>
+  <nav>
+    <ul role='navigation'>
+  	<li><a href="#about">About</a></li>
+  	<li><a href="#menu">Menu</a></li>
+  	<li><a href="#order-form">Order Form</a></li>
+  	<li><a href="#contact">Contact Information</a></li>
+    </ul>
+    <form role='search'>
+      <input type='search' placeholder='Enter search term here...'>
+      <input type='submit' value='search'>
+    </form>
+  </nav>
+</header>
+
+<main role='main' id=about>
+  <h2>About</h2>
+  <p>
+    Welcome to our pleasant palace of pizza! Developed from our shared joy of food, Pizza Palace was created by Aleah, Chaya, Hesper, and Huong
+    as a space for all pizza partakers. We hope you'll spend some time viewing our delectable menu and order something to share with loved ones!
+  </p>
+
+  <h2 id=menu>Menu</h2>
+  <div>
+    <h4>Cheese Slice - $3.00</h4>
+    <p>Mozzarella cheese, Parmesan cheese</p>
+    <img src = "https://i0.wp.com/yangyummm.com/wp-content/uploads/2023/01/Pizza-Thumbnails-1-scaled.jpg?resize=1024%2C683&ssl=1" width = "260">
+  </div>  
+
+  <div>
+    <h4>Veggie Slice - $4.00</h4>
+    <p>Mushroom, Olive, Spinach, Tomato</p>
+    <img src = "https://ewscripps.brightspotcdn.com/dims4/default/7bc7004/2147483647/strip/true/crop/3687x2074+0+192/resize/1280x720!/quality/90/?url=http%3A%2F%2Fewscripps-brightspot.s3.amazonaws.com%2F8e%2F67%2Fb3357cbf4ddc96bf2d55eeae04e2%2Flandinis-veggie-pizza-by-elsye-jones.jpg" width = "260">
+  </div>
+
+  <div>
+    <h4>Pepperoni Slice - $3.50</h4>
+    <p>Mozzarella cheese, Pepperoni</p>
+    <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReswKin1Auswig0s9a6qL3Ae5BVg-EIzFxTA&s"
+  </div>
+
+  
+<!-- Add your restaurant order form below -->
+  <form role='order_form' id=order-form>
+    <h2>Order Form</h2>
+    <section class = "customer-name">
+      <span>What is your name?</span>
+      <label for = "full-name">Name</label>
+      <input placeholder="Last,First" type="text">
+      <br>
+    </section>
+    
+    <section class = "contact-info">
+      <span>What is your street address?</span>
+      <br>
+      <input placeholder="Street Name, Unit/Apt." type="text">
+      <br>
+      <input placeholder="City Name" type="text">
+      <br>
+      <input placeholder="State" type="text">
+      <br>
+      <input placeholder="Zipcode" class="zipcode" type="text" required pattern="\d{5,5}(-\d{4,4})?">
+      <br>
+      <label for = "phone-number">Phone Number</label>
+      <input type = "number" id = "phone-number" name = "number">
+      <br>
+      <label for = "email-address">Email Address</label>
+      <input name = "email-address" id = "email-address" placeholder = "Email Address" type="text">
+    </section>
+    
+    <br>
+    
+    <section class = "menu-items">
+      <span>What would you like to order?</span>
+      <br>
+      <input type = "checkbox" id = "cheese-slice" value = "cheese-slice" name = "menu-item">
+      <label for = "cheese-slice">Cheese Slice</label>
+      <input type = "number" id = "quantity-of-cheese" name = "quantity-of-cheese" min = "0" step = "1">
+      <br>
+      <input type = "checkbox" id = "pepperoni-slice" value = "pepperoni-slice" name = "menu-item">
+      <label for = "pepperoni-slice">Pepperoni Slice</label>
+      <input type = "number" id = "quantity-of-pepperoni" name = "quantity-of-pepperoni" min = "0" step = "1">
+      <br>
+      <input type = "checkbox" id = "veggie-slice" value = "veggie-slice" name = "menu-item">
+      <label for = "cheese-slice">Veggie Slice</label>
+      <input type = "number" id = "quantity-of-veggie" name = "quantity-of-veggie" min = "0" step = "1">
+    </section>
+    
+    <br>
+
+    <section class = "submit-order">
+      <input type='submit' value='order' href='#' >
+    </section>
+  </form>
+<!-- Add your restaurant order form above -->
+</main>
+
+<aside role='complementary'>
+  <h2>Sidebar</h2>
+  <p>Complementary content, additional information and such...</p>
+</aside>
+
+<footer role='contentinfo' id=contact>
+  <h2>Footer</h2>
+  <p>Thank you esteemed pizza peep(s) for checking out Pizza Palace!
+    Please feel free to contact us at 123-45-PIZZA or pizzapalacepeeps@gmail.com if you have any questions, comments, or concerns!</p>
+</footer>
+
+</body>
+</html>
+
+  
 <title>Document title</title>
 <meta charset='utf-8'>
 <meta name='description' content='Description of document content'>
